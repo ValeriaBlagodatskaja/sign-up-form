@@ -4,21 +4,23 @@ const confirmPasswordInput = document.getElementById("confirm_password");
 const passwordMatchMessage = document.getElementById("passwordMatchMessage");
 
 function checkPasswordMatch() {
-  const password = passwordInput.ariaValueMax;
-  const confirm_password = confirmPasswordInput.ariaValueMax;
+  const password = passwordInput.value;
+  const confirm_password = confirmPasswordInput.value;
 
   if (password === confirm_password) {
     confirmPasswordInput.setCustomValidity("");
     passwordMatchMessage.innerTML = "";
   } else {
-    confirmPasswordInput.setCustomValidity("Passwords don't match");
+    confirmPasswordInput.setCustomValidity("Passwords do not match");
 
-    passwordMatchMessage.innerHTML = "Password don't match";
+    passwordMatchMessage.innerHTML = "*Passwords do not match";
   }
-  confirmPasswordInput.addEventListener("input", checkPasswordMatch);
-  form.addEventListener("submit", (e) => {
-    if (!form.checkValidity()) {
-      e.preventDefault();
-    }
-  });
 }
+console.log(confirmPasswordInput);
+confirmPasswordInput.addEventListener("blur", () => checkPasswordMatch());
+
+form.addEventListener("submit", (e) => {
+  if (!form.checkValidity()) {
+    e.preventDefault();
+  }
+});
