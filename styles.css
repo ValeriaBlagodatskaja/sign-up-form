@@ -1,0 +1,72 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  max-height: 100vh;
+  height: 100%;
+}
+
+.left-column {
+  height: 100%;
+  position: relative;
+}
+
+.green-image {
+  height: 100%;
+  max-width: 536px;
+  object-fit: cover;
+  width: 100%;
+}
+.odin-logo {
+  height: 128px;
+  width: 100px;
+}
+.odin {
+  height: 150px;
+  width: 533px;
+  background-color: rgba(35, 37, 46, 0.5);
+  position: absolute;
+  top: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@font-face {
+  font-family: norseBold;
+  src: url(Norse-Bold.otf);
+}
+.logo-text {
+  font-family: norseBold;
+  color: white;
+  font-size: 90px;
+}
+
+.right-column {
+  background-color: #e0e0e0;
+  width: 907px;
+  height: 1028px;
+  width: 908px;
+  height: 1024px;
+}
+ul {
+  list-style-type: none;
+}
+.form-container {
+  display: flex;
+  gap: 72px;
+}
+form {
+  height: 301px;
+  width: 907px;
+  background-color: #596d48;
+}
+input {
+}

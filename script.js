@@ -6,7 +6,7 @@ const passwordMatchMessage = document.getElementById("passwordMatchMessage");
 function checkPasswordMatch() {
   const password = passwordInput.value;
   const confirm_password = confirmPasswordInput.value;
-
+  console.log(confirmPasswordInput.value);
   if (password === confirm_password) {
     confirmPasswordInput.setCustomValidity("");
     passwordMatchMessage.innerTML = "";

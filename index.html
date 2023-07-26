@@ -9,78 +9,106 @@
     <script defer src="script.js"></script>
   </head>
   <body>
-    <header>
-      <h1>
-        This is not a real online service! You know you need something like this
-        in your life to help you realize your deepest dreams. Sign up
-        <italic>now</italic> to get started.
-      </h1>
-    </header>
-    <main>
-      <h1>Let's do this!</h1>
-      <form id="registrationForm">
-        <ul>
-          <li>
-            <label for="first_name">FIRST NAME:</label>
-            <input
-              type="text"
-              id="first_name"
-              name="first_name"
-              autocomplete="given-name"
-              required
-            />
-          </li>
-          <li>
-            <label for="last_name">LAST NAME:</label>
-            <input
-              type="text"
-              id="last_name"
-              name="last_name"
-              autocomplete="family-name"
-              required
-            />
-          </li>
-          <li>
-            <label for="mail">EMAIL:</label>
-            <input
-              type="email"
-              id="mail"
-              name="user_email"
-              autocomplete="email"
-              required
-            />
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <label for="phone_number">PHONE NUMBER:</label>
-            <input
-              type="tel"
-              id="phone_number"
-              name="phone_number"
-              autocomplete="tel"
-              required
-            />
-          </li>
-          <li>
-            <label for="password">PASSWORD:</label>
-            <input type="password" id="password" name="password" required />
-            <span id="passwordMatchMessage"></span>
-          </li>
-          <li>
-            <label for="confirm_password">CONFIRM PASSWORD:</label>
-            <input
-              type="password"
-              id="confirm_password"
-              name="confirm_password"
-              required
-            />
-          </li>
-        </ul>
-      </form>
-    </main>
-    <footer>
-      <button type="submit"><strong>Create Account</strong></button>
-    </footer>
+    <div class="container">
+      <div class="left-column">
+        <img src="green-leaf.jpg" class="green-image" />
+        <div class="odin">
+          <img src="odin-lined.png" class="odin-logo" />
+          <div class="logo-text">ODIN</div>
+        </div>
+      </div>
+      <div class="right-column">
+        <header>
+          <h1>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            <em>now</em> to get started.
+          </h1>
+          <h1>You <em>know</em> you want to.</h1>
+        </header>
+        <main>
+          <form id="registrationForm">
+            <h1>Let's do this!</h1>
+            <div class="form-container">
+              <div class="left-form">
+                <ul>
+                  <li>
+                    <label for="first_name">FIRST NAME:</label>
+                    <input
+                      type="text"
+                      id="first_name"
+                      name="first_name"
+                      autocomplete="given-name"
+                      required
+                    />
+                  </li>
+                  <li>
+                    <label for="mail">EMAIL:</label>
+                    <input
+                      type="email"
+                      id="mail"
+                      name="user_email"
+                      autocomplete="email"
+                      required
+                    />
+                  </li>
+                  <li>
+                    <label for="password">PASSWORD:</label>
+                    <input
+                      type="password"
+                      id="password"
+                      name="password"
+                      required
+                    />
+                    <span id="passwordMatchMessage"></span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="right-form">
+                <ul>
+                  <li>
+                    <label for="last_name">LAST NAME:</label>
+                    <input
+                      type="text"
+                      id="last_name"
+                      name="last_name"
+                      autocomplete="family-name"
+                      required
+                    />
+                  </li>
+                  <li>
+                    <label for="phone_number">PHONE NUMBER:</label>
+                    <input
+                      type="tel"
+                      id="phone_number"
+                      name="phone_number"
+                      autocomplete="tel"
+                      required
+                    />
+                  </li>
+                  <li>
+                    <label for="confirm_password">CONFIRM PASSWORD:</label>
+                    <input
+                      type="password"
+                      id="confirm_password"
+                      name="confirm_password"
+                      required
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </form>
+        </main>
+        <footer>
+          <button type="submit"><strong>Create Account</strong></button>
+          <h2>
+            Already have an account?
+            <a href="">Log in</a>
+          </h2>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>
