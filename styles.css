@@ -97,6 +97,12 @@ input {
   height: 28px;
   border-radius: 8px;
   margin-bottom: 10px;
+  border-color: #e5e7eb;
+  border-width: thin;
+}
+input [type="text"]:focus {
+  border-color: blue;
+  box-shadow: 5%;
 }
 button {
   margin-left: 47px;
@@ -110,4 +116,8 @@ button {
 label {
   display: block;
   margin-bottom: 0px;
+}
+strong {
+  font-size: 18px;
+  color: white;
 }
