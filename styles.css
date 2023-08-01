@@ -52,7 +52,7 @@ html {
 }
 
 .right-column {
-  background-color: #e0e0e0;
+  background-color: #f8f8ff;
   width: 907px;
   height: 1028px;
   width: 100%;
@@ -68,6 +68,7 @@ ul {
   list-style-type: none;
   padding-left: 47px;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
 }
 .form-container {
   display: flex;
@@ -77,7 +78,7 @@ ul {
 form {
   height: 301px;
   width: 907px;
-  background-color: #596d48;
+  background-color: white;
 }
 h1,
 h2 {
@@ -96,13 +97,14 @@ input {
   width: 261px;
   height: 28px;
   border-radius: 8px;
-  margin-bottom: 10px;
-  border-color: #e5e7eb;
+  margin-bottom: 12px;
+  margin-top: 5px;
+  box-sizing: border-box;
   border-width: thin;
 }
-input [type="text"]:focus {
-  border-color: blue;
-  box-shadow: 5%;
+input:focus {
+  border: 1px solid #2196f3; /* Blue border color */
+  box-shadow: 0 0 5px rgba(33, 150, 243, 0.7); /* Subtle blue box shadow */
 }
 button {
   margin-left: 47px;
@@ -110,7 +112,6 @@ button {
   width: 236px;
   height: 50px;
   border-radius: 8px;
-
   background-color: #596d48;
 }
 label {
