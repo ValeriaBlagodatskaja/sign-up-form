@@ -103,6 +103,7 @@ input {
   border-width: thin;
 }
 input:focus {
+  outline: none;
   border: 1px solid #2196f3; /* Blue border color */
   box-shadow: 0 0 5px rgba(33, 150, 243, 0.7); /* Subtle blue box shadow */
 }
@@ -121,4 +122,14 @@ label {
 strong {
   font-size: 18px;
   color: white;
+}
+label {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #404040;
+}
+a {
+  color: #596d48;
+  font-weight: bold;
+  text-decoration: none;
 }
