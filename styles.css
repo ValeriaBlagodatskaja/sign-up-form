@@ -107,6 +107,13 @@ input:focus {
   border: 1px solid #2196f3; /* Blue border color */
   box-shadow: 0 0 5px rgba(33, 150, 243, 0.7); /* Subtle blue box shadow */
 }
+input:invalid {
+  border-color: red;
+}
+input:valid {
+  outline: none;
+  border-color: grey;
+}
 button {
   margin-left: 47px;
   margin-top: 35px;
@@ -132,4 +139,18 @@ a {
   color: #596d48;
   font-weight: bold;
   text-decoration: none;
+}
+
+/* Example media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+  /* CSS styles for smaller screens */
+}
+.left-form,
+.right-form {
+  display: flex;
+  flex-wrap: wrap;
 }

@@ -28,7 +28,7 @@
           <h2>You <em>know</em> you want to.</h2>
         </header>
         <main>
-          <form id="registrationForm">
+          <form id="registrationForm" onsubmit="return(validate());">
             <h1 style="padding-top: 25px" ;>Let's do this!</h1>
             <div class="form-container">
               <div class="left-form">
@@ -59,8 +59,12 @@
                       type="password"
                       id="password"
                       name="password"
+                      minlength="8"
+                      pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$
+                      "
                       required
                     />
+
                     <span id="passwordMatchMessage"></span>
                   </li>
                 </ul>
@@ -94,6 +98,8 @@
                       type="password"
                       id="confirm_password"
                       name="confirm_password"
+                      pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$
+                      "
                       required
                     />
                   </li>

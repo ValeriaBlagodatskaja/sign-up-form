@@ -24,3 +24,16 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
   }
 });
+function validate() {
+  if (document.registrationForm.Name.value == "") {
+    alert("Please provide your name!");
+    document.registrationForm.Name.focus();
+    return false;
+  }
+  if (document.registrationForm.EMail.value == "") {
+    alert("Please provide your Email!");
+    document.registrationForm.EMail.focus();
+    return false;
+  }
+}
+.addEventListener("blur", () => )
