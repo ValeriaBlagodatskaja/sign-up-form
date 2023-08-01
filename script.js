@@ -2,7 +2,21 @@ const form = document.getElementById("registrationForm");
 const passwordInput = document.getElementById("password");
 const confirmPasswordInput = document.getElementById("confirm_password");
 const passwordMatchMessage = document.getElementById("passwordMatchMessage");
+const emailInput = document.getElementById("mail");
+const firstnameInput = document.getElementById("first_name");
+const lastnameInput = document.getElementById("last_name");
+const phoneNumberInput = document.getElementById("phone_number");
 
+const validate = () => {
+  const first_name = firstnameInput.value.trim();
+  const email = emailInput.value.trim();
+  const last_name = lastnameInput.value.trim();
+  const phone_number = phoneNumberInput.value.trim();
+  if (!first_name) {
+    highlightError(firstnameInput, "Nmae can't be blank");
+  }
+};
+console.log("validate", firstnameValue);
 function checkPasswordMatch() {
   const password = passwordInput.value;
   const confirm_password = confirmPasswordInput.value;
@@ -23,17 +37,5 @@ form.addEventListener("submit", (e) => {
   if (!form.checkValidity()) {
     e.preventDefault();
   }
+  validate();
 });
-function validate() {
-  if (document.registrationForm.Name.value == "") {
-    alert("Please provide your name!");
-    document.registrationForm.Name.focus();
-    return false;
-  }
-  if (document.registrationForm.EMail.value == "") {
-    alert("Please provide your Email!");
-    document.registrationForm.EMail.focus();
-    return false;
-  }
-}
-.addEventListener("blur", () => )
