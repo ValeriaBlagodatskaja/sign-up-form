@@ -12,11 +12,8 @@ const validate = () => {
   const email = emailInput.value.trim();
   const last_name = lastnameInput.value.trim();
   const phone_number = phoneNumberInput.value.trim();
-  if (!first_name) {
-    highlightError(firstnameInput, "Nmae can't be blank");
-  }
 };
-console.log("validate", firstnameValue);
+
 function checkPasswordMatch() {
   const password = passwordInput.value;
   const confirm_password = confirmPasswordInput.value;

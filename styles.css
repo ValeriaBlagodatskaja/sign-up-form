@@ -101,6 +101,8 @@ input {
   margin-top: 5px;
   box-sizing: border-box;
   border-width: thin;
+  display: flex;
+  flex-flow: column wrap;
 }
 input:focus {
   outline: none;
@@ -143,14 +145,42 @@ a {
 
 /* Example media query for smaller screens */
 @media screen and (max-width: 768px) {
-  .left-column,
-  .right-column {
-    width: 100%;
+  .container {
+    flex-flow: column;
+    height: auto;
+    text-align: center;
   }
-  /* CSS styles for smaller screens */
-}
-.left-form,
-.right-form {
-  display: flex;
-  flex-wrap: wrap;
+  .green-image {
+    width: 100vh;
+    height: 15vh;
+    display: flex;
+    background-size: 100vh;
+  }
+  .odin {
+    width: 100vw;
+    position: static;
+    gap: 10px;
+  }
+  .header {
+    width: auto;
+    height: auto;
+  }
+  .upper-text {
+    width: auto;
+    margin-top: 30px;
+  }
+  .registrationForm {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  input {
+    text-align: left;
+    width: auto;
+    font-size: 0.9em;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    height: 1.5rem;
+    width: 70vw;
+  }
 }
